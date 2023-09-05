@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InterfaceExample
+﻿namespace InterfaceExample
 {
     public class Dog : IAnimal
     {
+        public Dog()
+        {
+            Name = "Dog";
+        }
+        public string Name { get; set; }
+
         public bool Eat(FoodType food)
         {
             switch (food)

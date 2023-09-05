@@ -5,15 +5,15 @@
         public string MakeSound();
         public bool Move(MovementType move);
         public bool Eat(FoodType food);
+        public string Name { get; set; }
 
     }
 
     public enum AnimalType
     {
         Dog,
-        Cat,
         Bird,
-        Fish
+        Walrus
     }
 
     public enum FoodType
