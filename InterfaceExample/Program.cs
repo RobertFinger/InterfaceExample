@@ -11,7 +11,7 @@ namespace InterfaceExample
             var input = ui.GetAnimalType();
             var animal = manager.GetAnimalType(input);
             var food = ui.GetAnimalFood();
-            var likesFood =animal.Eat(food); 
+            var likesFood = animal.Eat(food); 
             ui.FeedAnimal(likesFood, animal.Name); 
             
      }
