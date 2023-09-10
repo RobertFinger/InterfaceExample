@@ -16,9 +16,16 @@
                     return new Duck();
                 case AnimalType.Walrus:
                     return new Walrus();
+                case AnimalType.Cat:
+                    return new Cat();
                 default:
                     return null;
             }
+        }
+
+        public Dog GetDog(AnimalType creature)
+        {
+            return new Dog();
         }
     }
 }

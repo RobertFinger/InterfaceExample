@@ -7,6 +7,13 @@
             
         }
 
+        public bool SelectAnimal()
+        {
+            Console.WriteLine("Do you want to select an animal? Y,N");
+            var answer = Console.ReadLine();
+            return answer?.ToLowerInvariant() == "y";
+        }
+
         public void FeedAnimal(bool likesFood, string name)
         {
             if(likesFood)

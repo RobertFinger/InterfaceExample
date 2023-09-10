@@ -13,7 +13,8 @@
     {
         Dog,
         Bird,
-        Walrus
+        Walrus,
+        Cat
     }
 
     public enum FoodType

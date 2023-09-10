@@ -8,11 +8,18 @@ namespace InterfaceExample
         {
             var manager = new CreatureManager();
             var ui = new UserInterface();
-            var input = ui.GetAnimalType();
-            var animal = manager.GetAnimalType(input);
-            var food = ui.GetAnimalFood();
-            var likesFood = animal.Eat(food); 
-            ui.FeedAnimal(likesFood, animal.Name); 
+
+            while (ui.SelectAnimal())
+            {
+                var input = ui.GetAnimalType();
+                var animal = manager.GetAnimalType(input);
+                var food = ui.GetAnimalFood();
+                var likesFood = animal.Eat(food); 
+                ui.FeedAnimal(likesFood, animal.Name);
+
+                Console.Clear();
+            }
+
             
      }
 
